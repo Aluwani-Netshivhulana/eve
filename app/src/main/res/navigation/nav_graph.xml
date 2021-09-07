@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/memberFragment">
+
+    <fragment
+        android:id="@+id/memberFragment"
+        android:name="com.example.eve4.MemberFragment"
+        android:label="fragment_member"
+        tools:layout="@layout/fragment_member" >
+        <action
+            android:id="@+id/action_memberFragment_to_guestFragment"
+            app:destination="@id/guestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guestFragment"
+        android:name="com.example.eve4.GuestFragment"
+        android:label="fragment_guest"
+        tools:layout="@layout/fragment_guest" >
+        <action
+            android:id="@+id/action_guestFragment_to_enrolFragment"
+            app:destination="@id/enrolFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enrolFragment"
+        android:name="com.example.eve4.EnrolFragment"
+        android:label="fragment_enrol"
+        tools:layout="@layout/fragment_enrol" >
+        <action
+            android:id="@+id/action_enrolFragment_to_deleteFragment"
+            app:destination="@id/deleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteFragment"
+        android:name="com.example.eve4.DeleteFragment"
+        android:label="fragment_delete"
+        tools:layout="@layout/fragment_delete" >
+        <action
+            android:id="@+id/action_deleteFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.eve4.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_reportFragment_to_logoutFragment"
+            app:destination="@id/logoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.eve4.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+
+
+</navigation>

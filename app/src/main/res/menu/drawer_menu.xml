@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/member_item"
+            android:icon="@drawable/eye4"
+            android:title="Member"
+            />
+
+        <item
+            android:id="@+id/guest_item"
+            android:icon="@drawable/eye4"
+            android:title="Guest"
+            />
+
+        <item
+            android:id="@+id/enrol_item"
+            android:icon="@drawable/eye4"
+            android:title="Enrol"
+            />
+
+        <item
+            android:id="@+id/delete_item"
+            android:icon="@drawable/eye4"
+            android:title="Delete"
+            />
+
+        <item
+            android:id="@+id/report_item"
+            android:icon="@drawable/eye4"
+            android:title="Report Issue"
+            />
+
+        <item
+            android:id="@+id/logout_item"
+            android:icon="@drawable/eye4"
+            android:title="Logout"
+            />
+    </group>
+
+</menu>

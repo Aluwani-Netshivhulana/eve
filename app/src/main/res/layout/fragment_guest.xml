@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    tools:context=".GuestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/guestname_in"
+            android:layout_width="338dp"
+            android:layout_height="56dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/light_navy"
+            android:bottomLeftRadius="45dp"
+            android:bottomRightRadius="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="full name"
+            android:textColor="#B98294CA"
+            android:topLeftRadius="45dp"
+            android:topRightRadius="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.315"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/member_in_btn"
+            android:layout_width="94dp"
+            android:layout_height="38dp"
+            android:backgroundTint="@color/navy"
+            android:text="Member"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_500"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.649"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.922" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="190dp"
+            android:layout_height="28dp"
+            android:text="Not a guest?"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.923" />
+
+        <Button
+            android:id="@+id/guest_in_btn"
+            android:layout_width="338dp"
+            android:layout_height="56dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/purple_700"
+
+            android:text="Log Guest"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.582" />
+
+        <EditText
+            android:id="@+id/purpose_in"
+            android:layout_width="338dp"
+            android:layout_height="56dp"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/light_navy"
+            android:bottomLeftRadius="20dp"
+            android:bottomRightRadius="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="purpose of visit"
+            android:textColor="#B98294CA"
+            android:topLeftRadius="45dp"
+            android:topRightRadius="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.446" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="206dp"
+            android:layout_height="69dp"
+            android:text="Guest"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.167" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
